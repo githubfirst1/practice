@@ -1,4 +1,4 @@
-package com.patel;
+package com.patel.ds.linkedlist;
 
 import java.util.Scanner;
 

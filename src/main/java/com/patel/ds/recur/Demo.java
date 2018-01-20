@@ -198,6 +198,9 @@ public class Demo {
 			
 		}
 		
+		/**
+		 * permutation using for loops
+		 */
 		public static void permute1() {
 			String input = "ab";
 			char input2[] = {'a','b','c'};

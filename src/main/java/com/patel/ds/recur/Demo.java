@@ -16,8 +16,10 @@ public class Demo {
 //		swap(temp,0,1);
 //		permutation("abc");
 		//permutation("","abcd");
-		subSets("", "abc");
+		//subSets("", "abc");
 		//permute1();
+		System.out.println(reverseString("abc"));
+		System.out.println("********");
 	}
 	
 	/*
@@ -54,6 +56,15 @@ public class Demo {
 	static int sumOfDigits(int input) {
 		if(input == 0) return input;
 		return sumOfDigits(input/10) + input%10;
+	}
+	
+	static String reverseString(String input) {
+		if(input.isEmpty() || input.length() == 1) return input;
+		String rest = reverseString(input.substring(1));
+		System.out.println("rest: " + rest + ", input: " + input);
+		String reverse = rest + input.charAt(0);
+		System.out.println("reverse: " + reverse);
+		return  reverse ;
 	}
 	
 	/*

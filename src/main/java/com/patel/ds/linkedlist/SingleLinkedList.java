@@ -140,6 +140,66 @@ public class SingleLinkedList {
 
 	    return newHead;
 	}
+	
+	public void findMax() {
+		 findMax(start);
+		 findSecondMax(start);
+		 findThirdMax(start);
+	}
+
+	private void findMax(Node start) {
+		int max = 0;
+		Node current = start;
+		while(current != null) {
+			max = current.data;
+			if(current.link != null && current.link.data > max) {
+				max = current.link.data;
+			}
+			current = current.link;
+		}
+		System.out.println(max);
+	}
+	
+	private void findSecondMax(Node start) {
+		int max1 = 0;
+		int max2 = 0;
+		Node current = start;
+		while(current != null) {
+			max1 = current.data;
+			if(current.link != null && current.link.data > max1) {
+				max2 = max1;
+				max1 = current.link.data;
+			} else if(current.link != null && current.link.data > max2) {
+				max2 = current.link.data;
+			}
+			current = current.link;
+		}
+		System.out.println(max2);
+	}
+	
+	private void findThirdMax(Node start) {
+		int max1 = 0;
+		int max2 = 0;
+		int max3 = 0;
+		Node current = start;
+		while(current != null) {
+			max1 = current.data;
+			if(current.link != null && current.link.data > max1) {
+				max3 = max2;
+				max2 = max1;
+				max1 = current.link.data;
+			} else if(current.link != null && current.link.data > max2) {
+				max3 = max2;
+				max2 = current.link.data;
+			} else if(current.link != null && current.link.data > max2) {
+				max3 = current.link.data;
+			}
+			current = current.link;
+		}
+		System.out.println(max3);
+	}
+
+
 
 	public void insertAtEnd(int data) {
 		Node p = start;

@@ -22,6 +22,7 @@ public class Demo {
             System.out.println("12.Delete at the end");
             System.out.println("13.Delete after");
             System.out.println("14.Reverse a linked list");
+            System.out.println("15.Find max");
 
             System.out.println("Enter your choice(20 to exit): ");
             int choice = new Scanner(System.in).nextInt();
@@ -72,6 +73,7 @@ public class Demo {
                 case 12: list.deleteAtEnd();break;
                 case 13: data = new Scanner(System.in).nextInt();list.deleteAfter(data);break;
                 case 14: list.reverseRecursive();break;
+                case 15:list.findMax();break;
                 default: break;
                 
             }

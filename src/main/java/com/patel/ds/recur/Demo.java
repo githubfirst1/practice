@@ -16,10 +16,10 @@ public class Demo {
 //		swap(temp,0,1);
 //		permutation("abc");
 		//permutation("","abcd");
-		//subSets("", "abc");
+		subSets("", "abc");
 		//permute1();
-		System.out.println(reverseString("abc"));
-		System.out.println("********");
+		//System.out.println(reverseString("abc"));
+		//System.out.println("********");
 	}
 	
 	/*

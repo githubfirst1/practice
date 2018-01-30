@@ -16,7 +16,7 @@ public class Demo {
 //		swap(temp,0,1);
 //		permutation("abc");
 		//permutation("","abcd");
-		subSets("", "abc");
+		subSets("", "ab");
 		//permute1();
 		//System.out.println(reverseString("abc"));
 		//System.out.println("********");
@@ -201,7 +201,11 @@ public class Demo {
 		
 		public static void subSets(String soFar, String remain){
 			if(remain.isEmpty()) {
-				System.out.println(soFar);
+				if(soFar.isEmpty()) {
+					System.out.println("{}");
+				} else {
+					System.out.println(soFar);
+				}
 			} else {
 				subSets(soFar + remain.charAt(0), remain.substring(1));
 				subSets(soFar, remain.substring(1));

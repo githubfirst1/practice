@@ -4,9 +4,9 @@ import java.util.Stack;
 
 public class StackDemo {
 	public static void main(String[] args) { 
-//		String input = new String("{a+b}");
-//		System.out.println(validate(input.toCharArray()));
-		reverse("hello");
+		String input = new String("{a+b}");
+		System.out.println(validate(input.toCharArray()));
+		//reverse("hello");
 	}
 	
 	/**

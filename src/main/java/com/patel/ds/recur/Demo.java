@@ -198,7 +198,16 @@ public class Demo {
 			}
 			
 		}
-		
+		/**
+		 * 
+		 * @param soFar
+		 * @param remain
+		 * Patterns as follows
+		 * if input is sofar = "" and remain = "", then it outputs {}
+		 * if input is sofar = "" and remain = a, then it outputs a, {}
+		 * if input is sofar = "" and remain = ab, then it outputs ab, a, b, {}
+		 * .Now based on method of induction it holds true for any input
+		 */
 		public static void subSets(String soFar, String remain){
 			if(remain.isEmpty()) {
 				if(soFar.isEmpty()) {
